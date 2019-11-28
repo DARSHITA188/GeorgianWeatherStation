@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Geoegian Weather Station</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #004b87">
+
+  <div class="container">
+    <div class="page-header">
+    <h1 style="text-align: center; color: #ffffff ">Georgian Weather Station</h1>      
+  </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel-group" style="max-width: 500px">
+            <div class="panel panel-primary">
+            <div class="panel-heading" style="text-align: center; color:white; background-color: #5ea10e;">Temperature</div>
+              <div class="panel-body">
+                  <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/923296/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel-group" style="max-width: 500px">
+            <div class="panel panel-primary">
+            <div class="panel-heading" style="text-align: center; background-color: #5ea10e;">Humidity</div>
+              <div class="panel-body" style="max-width:">
+                  <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/923297/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+              </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-3">  
+        
+      </div>
+      <div class="col-md-9">
+          <div class="panel-group" style="max-width: 500px" >
+            <div class="panel panel-primary">
+            <div class="panel-heading" style="text-align: center; background-color: #5ea10e;">Pressure</div>
+              <div class="panel-body" style="max-width:">
+                  <iframe width="450" height="260" style="border: 1px solid #cccccc;" src="https://thingspeak.com/channels/923298/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+              </div>
+            </div>
+            </div>
+      </div>
+    </div>
+    
+</body>
+</html>
